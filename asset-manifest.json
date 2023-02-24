@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/ofas/static/js/main.e88d5afc.js",
+    "index.html": "/ofas/index.html",
+    "main.e88d5afc.js.map": "/ofas/static/js/main.e88d5afc.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e88d5afc.js"
+  ]
+}

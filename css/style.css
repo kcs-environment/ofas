@@ -1,0 +1,524 @@
+.setting {
+    display: inline-block;
+    margin: 3vw;
+    width: 250px;
+    height: 250px;
+    position:absolute;
+    top: 0px;;
+    left: 680px;
+}
+
+#setting2 {
+    display: inline-block;
+    margin: 3vw;
+    float: left;
+    text-align: left ;
+}
+
+.modal_box {
+    position: fixed;
+    z-index: 7777;
+    display: none;
+    width: 80%;
+    max-width: 840px;
+    margin: 0;
+    padding: 60px 2vw 80px;
+    border: 2px solid #aaa;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 62px;
+    font-size: 46px;
+    color: #000;
+    line-height: 62px;
+    text-align: center;
+    background: #e6e6e6;
+}
+
+.modal_close i {
+    line-height: 62px;
+    vertical-align: bottom;
+}
+
+.modal_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6666;
+    display: none;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.link_area {
+    overflow: hidden;
+    max-width: 410px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.link_area .modal_link {
+    display: inline;
+}
+
+.link_area .modal_link a {
+    display: inline-block;
+    width: 360px;
+    color: #000;
+    line-height: 2.5;
+    text-decoration: none;
+    margin: 0 10px;
+    background: #e6e6e6;
+}
+
+#select{
+    display: inline-block;
+    width: 360px;
+    color: #000;
+    line-height: 2.5;
+    text-decoration: none;
+    margin: 0 10px;
+    background: #e6e6e6;
+    border-radius: 30px;
+    border: solid 10px #000;
+}
+
+.link-area ul li.modal_link:first-child a {
+    float: left;
+}
+
+.link-area ul li.modal_link:last-child a {
+    float: right;
+}
+
+span {
+    font-size: 50px;
+}
+
+
+.headline {
+    font-size: 100px;
+    display: inline;
+}
+
+#modal2 img {
+    border-radius: 30px;
+    border:solid 10px #000;
+}
+
+#colorPicker{
+    height: 100px;
+    width: 700px;
+}
+
+.info{
+    font-size: 75px;
+    margin-top:0;
+}
+
+.caution{
+    font-size: 35px;
+}
+
+body #modal8{
+    overflow: scroll;
+}
+
+#manual{
+    font-size: 50px;
+}
+
+#helpHeadline{
+    margin-bottom: 25px;
+    font-size: 70px;
+}
+
+#explanation{
+    margin-top: 0;
+    font-size: 50px;
+}
+@media screen and (max-width: 769px) {
+
+    /*  ウィンドウサイズ769px以下の時のスタイル  */
+
+    .modal_box {
+        padding: 50px 2vw 40px;
+    }
+
+    .modal_close {
+        width: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .modal_close i {
+        line-height: 44px;
+    }
+
+    .link_area {
+        margin: 25px auto 0;
+    }
+
+    .link_area .modal_link a {
+        margin: 15px auto 0;
+    }
+
+    .link_area ul li.modal_link:first-child a {
+        float: none;
+        margin-top: 0;
+    }
+
+    .link_area ul li.modal_link:last-child a {
+        float: none;
+    }
+
+}
+
+#back{
+  position: absolute;
+  top:70px;
+  left:20px;
+  width: 150px;
+  height: 150px;
+}
+
+#guidance{
+  width:150px;
+  float: right;
+  margin-top:30%;
+  margin-right: -16px;
+}
+
+#guidance img{
+  display:flex;
+  width: 100px;
+  padding-bottom:10px;
+}
+
+#guidanceArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#openModal {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalArea {
+    display: block;
+    position: fixed;
+    z-index: 10; /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+    background-size: cover;
+}
+
+.modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 70%;
+    max-width: 500px;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+
+.closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#Ch2 {
+    font-family: Arial;
+    position:absolute;
+    font-size: 150px;
+    color:#ffffff;
+    font-weight: 800;
+    letter-spacing : 4px;   /* 文字間 */
+    text-shadow    :
+       4px  4px 1px #1a1aff,
+      -4px  4px 1px #1a1aff,
+       4px -4px 1px #1a1aff,
+      -4px -4px 1px #1a1aff,
+       4px  0px 1px #1a1aff,
+       0px  4px 1px #1a1aff,
+      -4px  0px 1px #1a1aff,
+       0px -4px 1px #1a1aff;
+    top:10%;
+    left:17%;
+}
+
+#img1{
+    position: absolute;
+    top:26%;
+    left:6%;
+    z-index:7;
+}
+
+#img2{
+    position: absolute;
+    top:26%;
+    left:38.6%;
+    z-index:7;
+}
+
+#img3{
+    position: absolute;
+    top:26%;
+    left:71.5%;
+    z-index:7;
+}
+
+.back {
+    display: none;;
+}
+
+#choice1C {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:25%;
+    left:4%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#choice2C {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:25%;
+    left:36.46%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#choice3C {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:25%;
+    left:69%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#supprt {
+    position: absolute;
+    left:3%;
+    top:3%;
+    width:95%;
+    height:94%;
+    background-color:	#777777	;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#choiceBack1C{
+    position: absolute;
+    top:24.66%;
+    left:3.1%;
+    width:270px;
+    height:270px;
+    background-color:dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#choiceBack2C{
+    position: absolute;
+    top:24.66%;
+    left:35.5%;
+    width:270px;
+    height:270px;
+    background-color:dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#choiceBack3C{
+    position: absolute;
+    top:24.66%;
+    left:68%;
+    width:270px;
+    height:270px;
+    background-color: dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#Vh2 {
+    font-family: Arial;
+    position:absolute;
+    font-size: 140px;
+    color:#ffffff;
+    font-weight: 800;
+    letter-spacing : 4px;
+    text-shadow    :
+       4px  4px 1px #1a1aff,
+      -4px  4px 1px #1a1aff,
+       4px -4px 1px #1a1aff,
+      -4px -4px 1px #1a1aff,
+       4px  0px 1px #1a1aff,
+       0px  4px 1px #1a1aff,
+      -4px  0px 1px #1a1aff,
+       0px -4px 1px #1a1aff;
+    top:42%;
+    left:12%;
+}
+
+#choice1V {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:55%;
+    left:4%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#choice2V {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:55%;
+    left:36.46%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#choice3V {
+    position: absolute;
+    width:250px;
+    height:250px;
+    top:55%;
+    left:69%;
+    border-radius: 40px 40px 40px 40px;
+    border:solid 2px blue;
+    background-color: white;
+    z-index:5;
+}
+
+#back2{
+    position: absolute;
+    top:10%;
+}
+
+#choice1V p{
+    font-family: Arial;
+    position: absolute;
+    font-size:70px;
+    top: 25%;
+    left:56px;
+}
+
+#choice2V p{
+    font-family: Arial;
+    position: absolute;
+    font-size:70px;
+    top: 5%;
+    left:56px;
+}
+
+#choice3V p{
+    font-family: Arial;
+    position: absolute;
+    font-size:70px;
+    top: 5%;
+    left:56px;
+}
+
+#choiceBack1V{
+    position: absolute;
+    top:54.64%;
+    left:3%;
+    width:270px;
+    height:270px;
+    background-color:dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#choiceBack2V{
+    display: none;
+    position: absolute;
+    top:54.64%;
+    left:35.5%;
+    width:270px;
+    height:270px;
+    background-color:dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#choiceBack3V{
+    display: none;
+    position: absolute;
+    top:54.64%;
+    left:68%;
+    width:270px;
+    height:270px;
+    background-color: dodgerblue;
+    z-index:2;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#endBtn{
+    position:absolute;
+    border:solid 10px royalblue;
+    text-align: center;
+    top:74%;
+    left:9%;
+    width:35%;
+    font-family: Arial;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 70px;
+}
+
+#startBtn{
+    position:absolute;
+    border:solid 10px royalblue;
+    text-align: center;
+    top:74%;
+    left:54%;
+    width:35%;
+    font-family: Arial;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 70px;
+}
